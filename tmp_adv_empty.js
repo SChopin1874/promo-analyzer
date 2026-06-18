@@ -1,1 +1,0 @@
-function advTX(ap,curCPA,dInq,pjDaily){}
