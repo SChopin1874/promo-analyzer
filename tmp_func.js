@@ -1,0 +1,1 @@
+function Xcl(){try{localStorage.removeItem('promo_uploaded');AR=JSON.parse(JSON.stringify(DATA));Au();alert('已清除上传数据');}catch(e){}};if(typeof Xcl!=="function")throw new Error();

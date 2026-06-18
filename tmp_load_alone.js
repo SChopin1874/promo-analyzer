@@ -1,0 +1,2 @@
+async function loadAllData(){try{var u=localStorage.getItem("wps_url");if(u){try{var c2=new AbortController();setTimeout(function(){c2.abort();},3000);var r=await fetch(u,{signal:c2.signal});if(r.ok){var j=await r.json();if(Array.isArray(j)&&j.length>0){var m={};DATA.forEach(function(x){m[x.id+"|"+x.d]=x;});j.forEach(function(x){if(x.id&&x.d)m[x.id+"|"+x.d]=x;});return Object.values(m);}}}catch(e){}}}catch(e){}return DATA;}
+;void 0;
